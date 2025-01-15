@@ -2,7 +2,7 @@
 import { FC, useEffect, useRef } from "react";
 import Image from "next/image";
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
-import heroImage from "@/assets/images/harshu_PortfolioPic.jpg";
+import heroImage from "@/assets/images/harshu_portfolioPic.jpg";
 import Button from "@/components/Button";
 import SplitType from "split-type";
 import { useAnimate, motion, useScroll, useTransform } from "motion/react";
