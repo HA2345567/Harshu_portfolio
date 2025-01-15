@@ -43,7 +43,7 @@ const Header: FC = () => {
       ]);
       navAnimate(navScope.current, { height: 0 });
     }
-  }, [isOpen, topLineAnimate, topLineScope, bottomLineScope, bottomLineAnimate, navAnimate]);
+  }, [isOpen, topLineAnimate, topLineScope, bottomLineScope, bottomLineAnimate, navAnimate, navScope]);
 
   const handleClickNavItem = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();

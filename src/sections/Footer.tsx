@@ -1,41 +1,22 @@
 "use client";
 import Button from "@/components/Button";
-import { useRef, useCallback } from "react";
+import { useRef, useCallback, useEffect } from "react";
 import { useInView } from "motion/react";
-import { FC, useEffect } from "react";
+import { FC } from "react";
 
 const navItems = [
-  {
-    href: "#Home",
-    label: "Home",
-  },
-  {
-    href: "#projects",
-    label: "Projects",
-  },
-  {
-    href: "#testimonials",
-    label: "Testimonials",
-  },
-  {
-    href: "#faqs",
-    label: "Faqs",
-  },
-  {
-    href: "#contact",
-    label: "Contact",
-  },
+  { href: "#Home", label: "Home" },
+  { href: "#projects", label: "Projects" },
+  { href: "#testimonials", label: "Testimonials" },
+  { href: "#faqs", label: "Faqs" },
+  { href: "#contact", label: "Contact" },
 ];
 
-function useTextRevealAnimation(): {
-  scope: React.RefObject<HTMLElement>;
-  enteranceAnimation: () => void;
-} {
-  const scope = useRef<HTMLElement>(null);
+function useTextRevealAnimation() {
+  const scope = useRef<HTMLHeadingElement>(null);
 
   const enteranceAnimation = useCallback(() => {
     if (scope.current) {
-      // Example animation logic: Adding a class or triggering a CSS animation
       scope.current.style.opacity = "1";
       scope.current.style.transform = "translateY(0)";
       scope.current.style.transition = "opacity 0.5s ease, transform 0.5s ease";
@@ -55,8 +36,8 @@ const Footer: FC = () => {
     }
   }, [inView, enteranceAnimation]);
 
-  const handleClickNavItem = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    event.preventDefault(); // Prevent the default behavior of the anchor tag
+  const handleClickNavItem = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    event.preventDefault();
     const targetId = event.currentTarget.getAttribute("href");
     if (targetId && targetId.startsWith("#")) {
       const targetElement = document.querySelector(targetId);
@@ -88,41 +69,17 @@ const Footer: FC = () => {
                 iconAfter={
                   <div className="size-6 overflow-hidden">
                     <div className="w-12 h-6 flex transition-transform duration-300 group-hover/button:-translate-x-1/2">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        className="size-6"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                        />
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                       </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        className="size-6"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-                        />
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                       </svg>
                     </div>
                   </div>
                 }
               >
-                <a href="mailto:bhardwajharsh0312@gmail.com">
-                  bhardwajharsh0312@gmail.com
-                </a>
+                <a href="mailto:bhardwajharsh0312@gmail.com">bhardwajharsh0312@gmail.com</a>
               </Button>
             </div>
             <div>

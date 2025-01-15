@@ -32,7 +32,7 @@ const FAQs: FC = () => {
   return (
     <section className="section" id="faqs"> 
       <div className="container">
-        <h2 className="text-4xl md:text-7xl">FAQ's</h2>
+        <h2 className="text-4xl md:text-7xl">FAQs</h2>
         <div className="mt-10 md:mt-20">
           {faqs.map(({question, answer}, faqIndex)=>(
             <div key={question} className="border-t border-stone-400 border-dotted py-6 last:border-b  md:py-8 lg:py-10 relative isolate group/faq"onClick={()=>{

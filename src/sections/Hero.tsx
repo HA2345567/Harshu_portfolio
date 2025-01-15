@@ -32,7 +32,7 @@ const Hero: FC = () => {
       duration:0.5,
       delay: stagger(0.2),
     })
-  },[])
+  },[titleAnimate,titleScope])
 
 
   return (
