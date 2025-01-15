@@ -6,9 +6,9 @@ import { twMerge } from "tailwind-merge";
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 const faqs = [
   {
-    question: "How long does it take to build a website?",
+    question: "How long does it take to build a website & which tech-stack will used?",
     answer:
-      "It depends on the complexity of the website and the scope of the project.",
+      "It depends on the complexity of the website and the scope of the project. Tech-stack - Next.js, Framer Motion",
   },
   {
     question: "What is your development process like?",
@@ -16,14 +16,14 @@ const faqs = [
       "I follow a hands-on approach starting with project planning, building out the core features, and regular check-ins to make sure everything matches your needs.",
   },
   {
-    question: "Do you work with international clients?",
+    question: "Which sports do you like and who is you favourite player?",
     answer:
-      "Yes, I work with clients globally and can accommodate different time zones for meetings and communication.",
+      "I like to play cricket,football,table tennis, kabbadi etc, & Cristiano Ronaldo, Virat Kohli, Ab Deviliers are those my favourite players",
   },
   {
-    question: "What industries do you specialize in?",
+    question: "Which type of Songs & Movies do you like?",
     answer:
-      "I have experience across various industries including technology, retail, hospitality, and professional services, bringing fresh perspectives to each project.",
+      " I like some songs like - Hero by Charlie Puth etc , some fav singers- Charlie Puth, Travis Scott, Drake,Arijit Singh etc, In talking about Movies My fav - Interstaller, Good will hunting, Shawshank Redemption, Memeto etc... ",
   },
 ];
 
