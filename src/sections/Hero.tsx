@@ -66,7 +66,11 @@ const Hero: FC = () => {
             </div>
             </div>
           }>
-            <span>View My Work </span>
+            <a href="https://github.com/HA2345567" target="_blank">
+    <span> View My Work
+    </span>
+        
+</a>
           </Button>
           </motion.div>
           <motion.div
