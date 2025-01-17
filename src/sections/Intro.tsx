@@ -51,7 +51,7 @@ const Intro: FC = () => {
     <section className="py-24 md:py-24 lg:py-40  mt-12 lg:mt-20" id="intro" ref={scope}>
       <div className="container  ">
       <h2 className="text-3xl 
-       md:text-4xl lg:text-3xl ">
+       md:text-4xl lg:text-5xl ">
         I am a full-stack developer, with a stronger focus on backend development, passionate about creating seamless web applications. My interests include Web3 and blockchain, focusing on decentralized solutions, and DevOps, enhancing system efficiency and scalability. I thrive on solving challenges, learning continuously, and building innovative, reliable software that pushes the boundaries of technology.
       </h2>
 

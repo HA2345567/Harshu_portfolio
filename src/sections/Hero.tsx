@@ -67,8 +67,7 @@ const Hero: FC = () => {
             </div>
           }>
             <a href="https://github.com/HA2345567" target="_blank">
-    <span> View My Work
-    </span>
+    <span> View My Work</span>
         
 </a>
           </Button>
