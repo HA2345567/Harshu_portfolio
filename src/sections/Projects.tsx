@@ -1,37 +1,25 @@
 import { FC } from "react";
-import image1 from "@/assets/images/project-1.jpg";
-import image2 from "@/assets/images/iphone1.png";
-import image3 from "@/assets/images/project-3.jpg";
-import image4 from "@/assets/images/project-4.jpg";
-import image5 from "@/assets/images/project-5.jpg";
+import image1 from "@/assets/images/New_Pic01.png";
+import image2 from "@/assets/images/project-1.jpg";
+import image3 from "@/assets/images/iphone1.png";
 import Image from "next/image";
 
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 const projects = [
   {
-    name: "Food Ordering App",
+    name: "SmartInvoice - Professional Invoice Management System",
     image: image1,
+    href: "https://smartinvoice-rosy.vercel.app/", // Add the appropriate link here
+  },
+  {
+    name: "Food Ordering App",
+    image: image2,
     href: "https://hungerbull-fronted-982j.onrender.com/", // Add the appropriate link here
   },
   {
     name: "Iphone 3-d Project",
-    image: image2,
-    href: "https://iphone-3d-project.vercel.app/",
-  },
-  {
-    name: "Nova Fitness",
     image: image3,
-    href: "#", // Add the appropriate link here
-  },
-  {
-    name: "Urban Plates",
-    image: image4,
-    href: "#", // Add the appropriate link here
-  },
-  {
-    name: "Bloom Botanicals",
-    image: image5,
-    href: "#", // Add the appropriate link here
+    href: "https://iphone-3d-project.vercel.app/",
   },
 ];
 
